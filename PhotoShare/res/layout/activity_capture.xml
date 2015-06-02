@@ -1,0 +1,29 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".CaptureActivity" >
+
+    <ImageView
+        android:id="@+id/image_preview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/image_caption"
+        android:scaleType="centerCrop" />
+
+    <EditText
+        android:id="@+id/image_caption"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/upload_button"
+        android:inputType="textCapSentences" />
+
+    <Button
+        android:id="@+id/upload_button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="Upload" />
+
+</RelativeLayout>
